@@ -1,3 +1,3 @@
 #!/usr/bin/python
-import string
-print(string.ascii_uppercase)
+print(*map(chr, range(65, 91)), sep='', end=chr(90))
+
