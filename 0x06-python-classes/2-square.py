@@ -12,7 +12,7 @@ class Square(prev_square):
     """
 
     def __init__(self, size=0):
-        """initializing the square
+        """instantiation the square
 
         Args:
             size (int): the size of the square passed. Set to 0.
