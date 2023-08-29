@@ -2,10 +2,10 @@
 """ a module that defines a size of square """
 
 
-pre_square = __import__("0-square").Square
+prev_square = __import__("0-square").Square
 
 
-class Square(pre_square):
+class Square(prev_square):
     """ a class inherited from our previously defined square class
     Args:
         prev_square(class): a class that defines a square
