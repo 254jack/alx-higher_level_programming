@@ -6,7 +6,7 @@ prev_square = __import__("1-square").Square
 
 
 class Square(prev_square):
-    """ a class that defines and calculate area of the square
+    """ a class that defines a square
     Args:
         prev_square (class): a class that defines the size of the square
     """
