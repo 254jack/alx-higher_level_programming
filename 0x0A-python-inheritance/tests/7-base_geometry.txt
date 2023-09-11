@@ -1,0 +1,19 @@
+#base_geometry module
+How to use 7-base_geometry.py
+
+This library is very simple it only has one function called
+ integer_validator().
+
+''integer_validator()'' returns True if a num is integer.
+   >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+   >>> bg = BaseGeometry()
+
+   >>> bg.integer_validator("my_int", 12)
+
+   >>> bg.integer_validator("number", -12)
+   Traceback (most recent call last):
+   ValueError: number must be greater than 0
+
+   >>> bg.integer_validator("infnumber", int('inf'))
+   Traceback (most recent call last):
+   ValueError: invalid literal for int() with base 10: 'inf'
