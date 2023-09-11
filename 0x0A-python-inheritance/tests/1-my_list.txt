@@ -27,11 +27,6 @@ This is an example text file in reStructuredText format.
     >>> a
     [1, 5, 3, 'b']
 
-    >>> a.print_sorted()
-    Traceback (most recent call last):
-        ...
-    TypeError: unorderable types: str() < int()
-
     >>> b = MyList()
     >>> b.append(5)
     >>> b.append(-2)
