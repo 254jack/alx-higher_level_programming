@@ -1,4 +1,7 @@
 #!/usr/bin/python3
-""" a function that returns a list of available attributes and methods inside a class"""
+""" a module with method lookup"""
+
+
 def lookup(obj):
-	return dir(obj)
+    """ a function that returns a list of available attributes and methods inside a class"""
+    return dir(obj)
