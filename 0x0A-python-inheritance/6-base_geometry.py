@@ -12,4 +12,3 @@ class BaseGeometry:
         """method for calculating the area"""
 
         raise Exception("area() is not implemented")
-    
