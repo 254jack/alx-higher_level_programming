@@ -10,7 +10,7 @@ av_edit = argv[1:]
 
 try:
     content_list = load_from_json_file("add_item.json")
-except:
+except FileNotFoundError:
     content_list = []
 finally:
     for arg in av_edit:
