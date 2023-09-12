@@ -9,6 +9,6 @@ def write_file(filename="", text=""):
     Args:
     """
 
-    with open(filename) as f:
+    with open(filename, "w+") as f:
         char = f.write(text)
         return (char)
