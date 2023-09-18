@@ -5,7 +5,8 @@ from models.base import Base
 
 
 class Square(Rectangle):
-    """A class that creates square objects with 2 dimensions and offset coordinates.
+    """A class that creates square objects with 2 dimensions
+    and offset coordinates.
     """
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, size, x, y, id)
