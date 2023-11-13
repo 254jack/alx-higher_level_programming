@@ -1,10 +1,10 @@
 #!/usr/bin/node
-const occurrences = parseInt(process.argv[2], 10);
+const language = 'C is fun';
 
-if (!isNaN(occurrences) && occurrences > 0) {
-  for (let i = 0; i < occurrences; i++) {
-    console.log('C is fun');
-  }
-} else {
+if (isNaN(process.argv[2])) {
   console.log('Missing number of occurrences');
+} else {
+  for (let i = 0; i < parseInt(process.argv[2]); i++) {
+    console.log(language);
+  }
 }
