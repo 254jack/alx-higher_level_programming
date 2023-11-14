@@ -1,8 +1,17 @@
 #!/usr/bin/node
 
-const originalList = require('./100-data').list;
-console.log(originalList);
-const mappedList = originalList.map (function (e, index) {
-  return (e * index);
-});
-console.log(mappedList);
+const originalDict = require('./101-data').dict;
+
+const occurrencesDict = {};
+
+for (const userId in originalDict) {
+  const occurrences = originalDict[userId];
+
+  if (!occurrencesDict[occurrences]) {
+    occurrencesDict[occurrences] = [];
+  }
+
+  occurrencesDict[occurrences].push(userId);
+}
+
+console.log(occurrencesDict);
