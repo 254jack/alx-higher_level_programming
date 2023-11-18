@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-a module that lists all State objects from the database
-hbtn_0e_6_usa.
+a module that lists all State objects
+from the database hbtn_0e_6_usa.
 """
 import sys
 from sqlalchemy import create_engine
