@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Class definition of a State with inheritage from Base
+Class definition of a
+State with inheritage from Base module
 """
 
 from sqlalchemy import Column, Integer, String
@@ -16,4 +17,3 @@ class State(Base):
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
-    
