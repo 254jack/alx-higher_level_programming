@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Check if URL is provided as an argument
 if [ $# -eq 0 ]; then
