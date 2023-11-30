@@ -10,6 +10,6 @@ def find_peak(list_of_integers):
 
     pik = None
     for i in list_of_integers:
-        if pik == None or pik < i:
+        if pik is None or pik < i:
             pik = i
     return pik
