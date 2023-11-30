@@ -1,3 +1,3 @@
 #!/bin/bash
-# Display only body of a 200 status code response
-curl -sX GET $1 -L
+# script that takes in a URL, sends a GET request to the URL, and displays the body of the response
+curl -Ls "$1"
