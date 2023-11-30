@@ -12,4 +12,4 @@ def find_peak(list_of_integers):
     for i in list_of_integers:
         if pik == None or pik < i:
             pik = i
-        return pik
+    return pik
