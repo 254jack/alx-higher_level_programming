@@ -1,24 +1,24 @@
 #!/usr/bin/python3
-"""Module that finds a peak in a list of integers"""
+"""script for finding peak in list of ints, interview prep
+"""
+
+"""
+    THOUGHT PROCESS
+        it is not sorted, so sorting would take n(log(n))
+            -> not worth sorting
+        looping through and keeping track of max (brute force)
+            -> O(n)
+
+        possibly looping from each end reducing to 1/2 run time
+            -> still O(n)
+"""
 
 
 def find_peak(list_of_integers):
-    """function that finds a peak in a list of unsorted integers.
+    """BRUTE force implementation for question
     """
-
-
-    list_ = list_of_integers
-    if list_ == []:
-        return None
-    length = len(list_)
-
-    start, end = 0, length - 1
-    while start < end:
-        mid = start + (end - start) // 2
-        if list_[mid] > list_[mid - 1] and list_[mid] > list_[mid + 1]:
-            return list_[mid]
-        if list_[mid - 1] > list_[mid + 1]:
-            end = mid
-        else:
-            start = mid + 1
-    return list_[start]
+    max_i = None
+    for ele in list_of_integers:
+        if max_i is None or max_i < ele:
+            max_i = ele
+    return max_i
