@@ -3,9 +3,10 @@
 script that fetches https://alx-intranet.hbtn.io/status
 """
 
-from urllib import request
+from urllib.request import Request, urlopen
 
-url = 'https://alx-intranet.hbtn.io/status'
 
-with request.urlopen(url) as response:
-    body = response.read()
+if __name__ == "__main__":
+    url = Request("https://alx-intranet.hbtn.io/status")
+    with urlopen(url) as response:
+        body = response.read()
