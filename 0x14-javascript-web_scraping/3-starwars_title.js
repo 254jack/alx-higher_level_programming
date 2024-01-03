@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // javascript script that prints the title of a Star Wars movie
-//where episode is written in integer
+// where episode is written in integer
 
 const request = require('request');
 const url = 'https://swapi-api.hbtn.io/api/films/' + process.argv[2];
