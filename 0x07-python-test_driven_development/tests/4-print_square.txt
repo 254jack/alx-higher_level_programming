@@ -1,4 +1,4 @@
-# 4-print_square.txt
+#Test cases for 4-print_square
 ====================
 Usage
 =====

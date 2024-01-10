@@ -1,4 +1,4 @@
-# 3-say_my_name.txt
+#Test cases for 3-say_my_name
 
 ===========================
 Usage

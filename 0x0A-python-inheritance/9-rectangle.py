@@ -6,15 +6,12 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """a class Rectangle that inherits from BaseGeometry.
-
+    """a square function that inherits from Rectangle
     Args:
-        width (int): x dimension of rectangle
-        height (int): y dimension of rectangle
+        size (int): length of side of square
 
     Attributes:
-        __width (int): x dimension of rectangle
-        __height (int): y dimension of rectangle
+        __size (int): length of side of square
 
     """
 
